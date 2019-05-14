@@ -43,7 +43,7 @@ To integrate Okta's Identity Platform for user authentication, you'll first need
 * Add a `http://localhost:8100/implicit/callback` as a Login redirect URI and click **Done**.
 * Click **Edit** and add Logout redirect URIs, where the first should be your reversed Okta domain name, followed by `:/logout` and the second is `http://localhost:8100/implicit/logout`. Click **Save**.
 
-After performing these steps, copy your `issuer` and `clientId` into [`src/app/auth/auth.service.ts`](https://github.com/oktadeveloper/okta-ionic-4-login-example/blob/master/src/app/auth/auth.service.ts#L39) and change `{yourOktaDomain}` to match your account's id.
+After performing these steps, copy your `issuer` and `clientId` into [`src/app/auth/auth.service.ts`](https://github.com/oktadeveloper/okta-ionic-4-login-example/blob/master/src/app/auth/auth.service.ts#L39).
 
 ```typescript
 const clientId = '{yourClientId}';
