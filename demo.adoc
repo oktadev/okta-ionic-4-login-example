@@ -1,0 +1,53 @@
+. Show Ionic 4 is installed
+
+  npm install -g ionic@4.12.0
+  
+. Create an Ionic 4 app
+
+  ionic start ionic-login tabs
+
+. Start the app
+
+  cd ionic-login
+  ionic serve
+
+. Add a login feature, streamlined by OktaDev Schematics! (open in browser)
+
+. Create an OIDC app on Okta
+
+  http://localhost:8100/implicit/callback
+  
+  {reversedOktaDomain}:/logout
+  http://localhost:8100/implicit/logout
+
+. Make sure you have Angular CLI installed. Then copy clientId and issuer into command:
+
+  ng add @oktadev/schematics --issuer=$issuer --clientId=$clientId
+
+.  This performs the following steps:
+
+  1. Adds and installs `@oktadev/schematics` as a dev dependency
+  2. Adds Ionic AppAuth as a dependency
+  3. Adds @ionic/storage as a dependency for storing tokens
+  4. Adds services, modules, and pages to `src/app/auth`
+  5. Adds a login page and related files to `src/app/login`
+  5. Adds a `cordova` section to `package.json` that defines plugins and a custom URL scheme
+  6. Updates existing files to handle authentication logic
+
+. Verify it works, then add registration **Users** > **Registration**
+
+. Run on iOS using `ionic cordova prepare ios`
+
+. Open the native project in Xcode `open platforms/ios/MyApp.xcworkspace`
+
+. Run on Android, but make sure you're using Java 8 first! `sdk use java 8.0.202-amzn`
+
+  ionic cordova prepare android
+
+. Open in Android Studio: `studio platforms/android`
+
+. If `NdkCompile is no longer supported`, turn it off in `android/gradle.properties`
+
+. Set launchMode to `singleTask` in `AndroidManifest.xml`
+
+. Run from Android Studio
