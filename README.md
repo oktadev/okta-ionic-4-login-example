@@ -22,7 +22,7 @@ git clone https://github.com/oktadeveloper/okta-ionic-4-login-example.git ionic-
 cd ionic-login
 ```
 
-This will get a copy of the project installed locally. Then run the following command to install Ionic and Cordova.
+This will get a copy of the project installed locally. Then run the following command to install Ionic CLI.
 
 ```
 npm install -g ionic@4.12.0
