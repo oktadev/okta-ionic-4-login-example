@@ -2,7 +2,7 @@
 
 This example shows how to create an Ionic application that uses uses OpenID Connect (OIDC) for login. You can watch a [screencast of how it was created on YouTube](https://youtu.be/MBAUKQGNx5Y).
 
-<!--Please read [Build an Ionic App with User Authentication](https://developer.okta.com/blog/2017/08/22/build-an-ionic-app-with-user-authentication) to see how this application was created.-->
+Please read [Tutorial: User Login and Registration in Ionic 4](https://developer.okta.com/blog/2019/06/20/ionic-4-tutorial-user-authentication-and-registration) to see how this application was created.
 
 **Prerequisites:** [Node.js](https://nodejs.org/).
 
